@@ -1,0 +1,63 @@
+@import "ui/ui-colors";
+@import "helpers/mixins";
+
+.ui-links {
+    padding: 20px;
+}
+
+.ui-links__row {
+    margin-bottom: 20px;
+}
+
+.ui-links__grid {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.ui-links__title {
+    .ui-h4();
+    margin-bottom: 10px;
+}
+
+.ui-links__item {}
+
+.ui-links__type {
+    .ui-p();
+    color: @color-gray_400;
+    margin-bottom: 10px;
+}
+
+.ui-links__link {
+    .ui-link();
+
+    &[data-type="hover"] {
+        text-decoration: underline;
+    }
+
+    &[data-type="active"] {
+        color: @color-blue_800;
+        text-decoration: underline;
+    }
+
+    &[data-type="disabled"] {
+        .ui-link_disabled();
+    }
+}
+
+.ui-links__link-add {
+    .ui-link-add();
+
+    &[data-type="hover"] {
+        text-decoration: underline;
+    }
+
+    &[data-type="active"] {
+        color: @color-blue_800;
+        text-decoration: underline;
+    }
+
+    &[data-type="disabled"] {
+        .ui-link-add_disabled();
+    }
+}

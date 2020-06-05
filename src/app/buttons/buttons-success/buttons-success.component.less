@@ -1,0 +1,107 @@
+@import "ui/ui-colors";
+@import "helpers/mixins";
+
+.ui-btns {
+    padding: 20px;
+}
+
+.ui-btns__grid {
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.ui-btns__title {
+    .ui-h4();
+    margin-bottom: 10px;
+    grid-column: span 6;
+}
+
+.ui-btns__type {
+    .ui-p();
+    color: @color-gray_400;
+    margin-bottom: 10px;
+}
+
+.ui-btns__descr {
+    .ui-caption();
+    color: @color-gray_400;
+    margin-top: 10px;
+}
+
+button {
+    &[data-type="ui-btn_large_success"] {
+        .ui-btn_large_success();
+    }
+
+    &[data-type="ui-btn_large_success_hover"] {
+        .ui-btn_large_success();
+        background-color: @color-green_50;
+        border-color: @color-green_50;
+    }
+
+    &[data-type="ui-btn_large_success_active"] {
+        .ui-btn_large_success();
+        background-color: @color-green_100;
+        color: @color-white;
+        border-color: @color-green_100;
+    }
+
+    &[data-type="ui-btn_large_with-icon_success"] {
+        .ui-btn_large_with-icon_success();
+    }
+
+    &[data-type="ui-btn_large_only-icon_success"] {
+        .ui-btn_large_only-icon_success();
+    }
+
+    &[data-type="ui-btn_medium_success"] {
+        .ui-btn_medium_success();
+    }
+
+    &[data-type="ui-btn_medium_success_hover"] {
+        .ui-btn_medium_success();
+        background-color: @color-green_50;
+        border-color: @color-green_50;
+    }
+
+    &[data-type="ui-btn_medium_success_active"] {
+        .ui-btn_medium_success();
+        background-color: @color-green_100;
+        color: @color-white;
+        border-color: @color-green_100;
+    }
+
+    &[data-type="ui-btn_medium_with-icon_success"] {
+        .ui-btn_medium_with-icon_success();
+    }
+
+    &[data-type="ui-btn_medium_only-icon_success"] {
+        .ui-btn_medium_only-icon_success();
+    }
+
+    &[data-type="ui-btn_small_success"] {
+        .ui-btn_small_success();
+    }
+
+    &[data-type="ui-btn_small_success_hover"] {
+        .ui-btn_small_success();
+        background-color: @color-green_50;
+        border-color: @color-green_50;
+    }
+
+    &[data-type="ui-btn_small_success_active"] {
+        .ui-btn_small_success();
+        background-color: @color-green_100;
+        color: @color-white;
+        border-color: @color-green_100;
+    }
+
+    &[data-type="ui-btn_small_with-icon_success"] {
+        .ui-btn_small_with-icon_success();
+    }
+
+    &[data-type="ui-btn_small_only-icon_success"] {
+        .ui-btn_small_only-icon_success();
+    }
+}

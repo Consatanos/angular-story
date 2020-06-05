@@ -1,0 +1,105 @@
+@import "ui/ui-colors";
+@import "helpers/mixins";
+
+.ui-btns {
+    padding: 20px;
+    background-color: @color-gray_20;
+}
+
+.ui-btns__grid {
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.ui-btns__title {
+    .ui-h4();
+    margin-bottom: 10px;
+    grid-column: span 6;
+}
+
+.ui-btns__type {
+    .ui-p();
+    color: @color-gray_400;
+    margin-bottom: 10px;
+}
+
+.ui-btns__descr {
+    .ui-caption();
+    color: @color-gray_400;
+    margin-top: 10px;
+}
+
+button {
+    &[data-type="ui-btn_large_muted"] {
+        .ui-btn_large_muted();
+    }
+
+    &[data-type="ui-btn_large_muted_hover"] {
+        .ui-btn_large_muted();
+        background-color: @color-gray_40;
+        border-color: @color-gray_40;
+    }
+
+    &[data-type="ui-btn_large_muted_active"] {
+        .ui-btn_large_muted();
+        background-color: @color-gray_50;
+        border-color: @color-gray_50;
+    }
+
+    &[data-type="ui-btn_large_with-icon_muted"] {
+        .ui-btn_large_with-icon_muted();
+    }
+
+    &[data-type="ui-btn_large_only-icon_muted"] {
+        .ui-btn_large_only-icon_muted();
+    }
+
+    &[data-type="ui-btn_medium_muted"] {
+        .ui-btn_medium_muted();
+    }
+
+    &[data-type="ui-btn_medium_muted_hover"] {
+        .ui-btn_medium_muted();
+        background-color: @color-gray_40;
+        border-color: @color-gray_40;
+    }
+
+    &[data-type="ui-btn_medium_muted_active"] {
+        .ui-btn_medium_muted();
+        background-color: @color-gray_50;
+        border-color: @color-gray_50;
+    }
+
+    &[data-type="ui-btn_medium_with-icon_muted"] {
+        .ui-btn_medium_with-icon_muted();
+    }
+
+    &[data-type="ui-btn_medium_only-icon_muted"] {
+        .ui-btn_medium_only-icon_muted();
+    }
+
+    &[data-type="ui-btn_small_muted"] {
+        .ui-btn_small_muted();
+    }
+
+    &[data-type="ui-btn_small_muted_hover"] {
+        .ui-btn_small_muted();
+        background-color: @color-gray_40;
+        border-color: @color-gray_40;
+    }
+
+    &[data-type="ui-btn_small_muted_active"] {
+        .ui-btn_small_muted();
+        background-color: @color-gray_50;
+        border-color: @color-gray_50;
+    }
+
+    &[data-type="ui-btn_small_with-icon_muted"] {
+        .ui-btn_small_with-icon_muted();
+    }
+
+    &[data-type="ui-btn_small_only-icon_muted"] {
+        .ui-btn_small_only-icon_muted();
+    }
+}

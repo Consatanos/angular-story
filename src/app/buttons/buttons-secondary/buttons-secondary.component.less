@@ -1,0 +1,104 @@
+@import "ui/ui-colors";
+@import "helpers/mixins";
+
+.ui-btns {
+    padding: 20px;
+}
+
+.ui-btns__grid {
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.ui-btns__title {
+    .ui-h4();
+    margin-bottom: 10px;
+    grid-column: span 6;
+}
+
+.ui-btns__type {
+    .ui-p();
+    color: @color-gray_400;
+    margin-bottom: 10px;
+}
+
+.ui-btns__descr {
+    .ui-caption();
+    color: @color-gray_400;
+    margin-top: 10px;
+}
+
+button {
+    &[data-type="ui-btn_large_secondary"] {
+        .ui-btn_large_secondary();
+    }
+
+    &[data-type="ui-btn_large_secondary_hover"] {
+        .ui-btn_large_secondary();
+        background-color: @color-gray_50;
+        border-color: @color-gray_50;
+    }
+
+    &[data-type="ui-btn_large_secondary_active"] {
+        .ui-btn_large_secondary();
+        background-color: @color-gray_100;
+        border-color: @color-gray_100;
+    }
+
+    &[data-type="ui-btn_large_with-icon_secondary"] {
+        .ui-btn_large_with-icon_secondary();
+    }
+
+    &[data-type="ui-btn_large_only-icon_secondary"] {
+        .ui-btn_large_only-icon_secondary();
+    }
+
+    &[data-type="ui-btn_medium_secondary"] {
+        .ui-btn_medium_secondary();
+    }
+
+    &[data-type="ui-btn_medium_secondary_hover"] {
+        .ui-btn_medium_secondary();
+        background-color: @color-gray_50;
+        border-color: @color-gray_50;
+    }
+
+    &[data-type="ui-btn_medium_secondary_active"] {
+        .ui-btn_medium_secondary();
+        background-color: @color-gray_100;
+        border-color: @color-gray_100;
+    }
+
+    &[data-type="ui-btn_medium_with-icon_secondary"] {
+        .ui-btn_medium_with-icon_secondary();
+    }
+
+    &[data-type="ui-btn_medium_only-icon_secondary"] {
+        .ui-btn_medium_only-icon_secondary();
+    }
+
+    &[data-type="ui-btn_small_secondary"] {
+        .ui-btn_small_secondary();
+    }
+
+    &[data-type="ui-btn_small_secondary_hover"] {
+        .ui-btn_small_secondary();
+        background-color: @color-gray_50;
+        border-color: @color-gray_50;
+    }
+
+    &[data-type="ui-btn_small_secondary_active"] {
+        .ui-btn_small_secondary();
+        background-color: @color-gray_100;
+        border-color: @color-gray_100;
+    }
+
+    &[data-type="ui-btn_small_with-icon_secondary"] {
+        .ui-btn_small_with-icon_secondary();
+    }
+
+    &[data-type="ui-btn_small_only-icon_secondary"] {
+        .ui-btn_small_only-icon_secondary();
+    }
+}

@@ -1,0 +1,34 @@
+.icons-bank-preview {
+    padding: 20px;
+}
+
+.icons-bank-preview__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+
+    &.large {}
+}
+
+.icons-bank-preview__item {
+    display: flex;
+}
+
+.icons-bank-preview__icon {
+    width: 16px;
+    height: 16px;
+
+    &:not(:last-of-type) {
+        margin-right: 10px;
+    }
+
+    .large & {
+        width: 24px;
+        height: 24px;
+    }
+
+    &.grayscale {
+        filter: grayscale(1);
+    }
+}

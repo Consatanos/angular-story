@@ -1,0 +1,107 @@
+@import "ui/ui-colors";
+@import "helpers/mixins";
+
+.ui-btns {
+    padding: 20px;
+}
+
+.ui-btns__grid {
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.ui-btns__title {
+    .ui-h4();
+    margin-bottom: 10px;
+    grid-column: span 6;
+}
+
+.ui-btns__type {
+    .ui-p();
+    color: @color-gray_400;
+    margin-bottom: 10px;
+}
+
+.ui-btns__descr {
+    .ui-caption();
+    color: @color-gray_400;
+    margin-top: 10px;
+}
+
+button {
+    &[data-type="ui-btn_large_alert"] {
+        .ui-btn_large_alert();
+    }
+
+    &[data-type="ui-btn_large_alert_hover"] {
+        .ui-btn_large_alert();
+        background-color: @color-red_50;
+        border-color: @color-red_50;
+    }
+
+    &[data-type="ui-btn_large_alert_active"] {
+        .ui-btn_large_alert();
+        background-color: @color-red_100;
+        color: @color-white;
+        border-color: @color-red_100;
+    }
+
+    &[data-type="ui-btn_large_with-icon_alert"] {
+        .ui-btn_large_with-icon_alert();
+    }
+
+    &[data-type="ui-btn_large_only-icon_alert"] {
+        .ui-btn_large_only-icon_alert();
+    }
+
+    &[data-type="ui-btn_medium_alert"] {
+        .ui-btn_medium_alert();
+    }
+
+    &[data-type="ui-btn_medium_alert_hover"] {
+        .ui-btn_medium_alert();
+        background-color: @color-red_50;
+        border-color: @color-red_50;
+    }
+
+    &[data-type="ui-btn_medium_alert_active"] {
+        .ui-btn_medium_alert();
+        background-color: @color-red_100;
+        color: @color-white;
+        border-color: @color-red_100;
+    }
+
+    &[data-type="ui-btn_medium_with-icon_alert"] {
+        .ui-btn_medium_with-icon_alert();
+    }
+
+    &[data-type="ui-btn_medium_only-icon_alert"] {
+        .ui-btn_medium_only-icon_alert();
+    }
+
+    &[data-type="ui-btn_small_alert"] {
+        .ui-btn_small_alert();
+    }
+
+    &[data-type="ui-btn_small_alert_hover"] {
+        .ui-btn_small_alert();
+        background-color: @color-red_50;
+        border-color: @color-red_50;
+    }
+
+    &[data-type="ui-btn_small_alert_active"] {
+        .ui-btn_small_alert();
+        background-color: @color-red_100;
+        color: @color-white;
+        border-color: @color-red_100;
+    }
+
+    &[data-type="ui-btn_small_with-icon_alert"] {
+        .ui-btn_small_with-icon_alert();
+    }
+
+    &[data-type="ui-btn_small_only-icon_alert"] {
+        .ui-btn_small_only-icon_alert();
+    }
+}

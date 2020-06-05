@@ -1,0 +1,51 @@
+@import "ui/ui-colors";
+@import "helpers/ui-typography-mixins";
+
+.custom-form {
+    &__header {
+        margin-bottom: 4px;
+    }
+
+    &__title {
+        .ui-h4();
+        font-style: normal;
+    }
+
+    &__content {
+        color: @color-gray_500;
+    }
+
+    &__main {
+        margin-top: 16px;
+    }
+
+    &__row {
+        &:not(:last-of-type) {
+            margin-bottom: 24px;
+        }
+
+        &_buttons {
+            display: flex;
+        }
+
+        &_checkbox {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__footer {
+        margin-top: 16px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+}
+
+.error {
+    margin-top: 2px;
+
+    &_danger {
+        .ui-caption();
+        color: @color-red;
+    }
+}

@@ -1,0 +1,127 @@
+.ui-h1() {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+}
+
+.ui-h2() {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.ui-h3() {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.ui-h4() {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.ui-p() {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.ui-p_medium() {
+    .ui-p();
+    font-weight: 500;
+}
+
+.ui-p_bold() {
+    .ui-p();
+    font-weight: bold;
+}
+
+.ui-caption() {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.ui-caption_upper() {
+    .ui-caption();
+    text-transform: uppercase;
+}
+
+.ui-caption_medium() {
+    .ui-caption();
+    font-weight: 500;
+}
+
+.ui-caption_bold() {
+    .ui-caption();
+    font-weight: bold;
+}
+
+.ui-caption_medium_upper() {
+    .ui-caption_medium();
+    .ui-caption_upper();
+}
+
+.ui-caption_bold_upper() {
+    .ui-caption_bold();
+    .ui-caption_upper();
+}
+
+.ui-eyebrow() {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.ui-eyebrow_medium() {
+    .ui-eyebrow();
+    font-weight: 500;
+}
+
+.ui-eyebrow_bold() {
+    .ui-eyebrow();
+    font-weight: bold;
+}
+
+.ui-link() {
+    color: @color-blue_600;
+    text-decoration: none;
+
+    &:hover {
+        color: @color-blue_600;
+        text-decoration: underline;
+    }
+
+    &:active {
+        color: @color-blue_800;
+        text-decoration: underline;
+    }
+}
+
+.ui-link_disabled() {
+    color: @color-gray_300;
+    pointer-events: none;
+}
+
+
+.ui-link-add() {
+    .ui-link();
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        mask-image: url("../../assets/arrow-down-select.svg");
+        background-color: currentColor;
+
+        @supports (-ms-ime-align:auto) {
+            background-color: transparent;
+            background-image: url("../../assets/arrow-down-select.svg");
+        }
+    }
+}
+
+.ui-link-add_disabled() {
+    .ui-link-add();
+    .ui-link_disabled();
+}
